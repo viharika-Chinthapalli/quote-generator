@@ -10,12 +10,12 @@ const Navbar = () => {
   const [{ apiData }] = useFetch(`/user/${username}`);
   return (
     <div>
-      <nav className="bg-[#001C30] h-20">
+      <nav className="bg-[#001C30] h-20 ">
         <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 h-20">
           <div className="flex items-center justify-between h-full">
             <div className="flex-shrink-0">
               <Link to="/">
-                <img className="h-20 w-45" src={ image } alt="Logo" />
+                <img className="h-15 w-45" src={ image } alt="Logo" />
               </Link>
             </div>
             <div className="flex items-center">
