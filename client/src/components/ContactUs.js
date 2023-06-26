@@ -6,13 +6,6 @@ function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [errors, setErrors] = useState({});
-
-  const isValidEmail = (email) => {
-    // Basic email validation regex
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-  };
 
   return (
     <div className="flex justify-center mt-8">
@@ -35,9 +28,7 @@ function Contact() {
             <input
               type="text"
               id="name"
-              className={`w-full px-3 py-2 border rounded-lg font-bold mb-4 h-20 text-xl ${
-                errors.name ? "border-red-500" : ""
-              }`}
+              className={`w-full px-3 py-2 border rounded-lg font-bold mb-4 h-20 text-xl`}
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="Name"
@@ -49,9 +40,7 @@ function Contact() {
             <input
               type="email"
               id="email"
-              className={`w-full px-3 py-2 border rounded-lg font-bold mb-4 h-20 text-xl ${
-                errors.email ? "border-red-500" : ""
-              }`}
+              className={`w-full px-3 py-2 border rounded-lg font-bold mb-4 h-20 text-xl `}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Email"
@@ -62,9 +51,7 @@ function Contact() {
           <div className="mb-4">
             <textarea
               id="message"
-              className={`w-full px-3 py-2 border rounded-lg font-bold mb-4 text-xl ${
-                errors.message ? "border-red-500" : ""
-              }`}
+              className={`w-full px-3 py-2 border rounded-lg font-bold mb-4 text-xl`}
               rows="4"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
