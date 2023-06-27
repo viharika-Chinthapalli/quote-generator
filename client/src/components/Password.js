@@ -46,7 +46,7 @@ export default function Password() {
 
   return (
     <div>
-      <div className="container mx-auto">
+      <div className="container mx-auto m-20">
         <Toaster position="top-center" reverseOrder={false}></Toaster>
         <div className="flex justify-center items-center h-screen">
           <div className={styles.glass}>

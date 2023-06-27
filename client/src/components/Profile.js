@@ -61,14 +61,14 @@ export default function Profile() {
   return (
     <div>
       <Navbar />
-      <div className="container mx-auto">
+      <div className="container mx-auto mt-20">
         <Toaster position="top-center" reverseOrder={false}></Toaster>
         <div className="flex justify-center items-center h-screen">
           <div
-            className={`${styles.glass} ${extend.glass}`}
+            className={`${styles.glass} ${extend.glass} mt-20`}
             style={{ width: "45%", paddingTop: "3em" }}
           >
-            <div className="title flex flex-col items-center">
+            <div className="title flex flex-col items-center mt-20">
               <h4 className="text-5xl font-bold">Profile</h4>
               <span className="py-4 text-xl w-2/3 text-center text-gray-500">
                 You can update the details.
