@@ -10,7 +10,7 @@ function RandomQuotes() {
   const fetchQuotes = async (emotion) => {
     try {
       const response = await fetch(
-        `http://localhost:8080/api/get-quotes?emotion=${emotion}`
+        `${process.env.REACT_APP_SERVER_DOMAIN}/api/get-quotes?emotion=${emotion}`
       );
       const data = await response.json();
       const randomIndex = Math.floor(Math.random() * data.length);
@@ -35,7 +35,7 @@ function RandomQuotes() {
   };
 
   return (
-    <div  style={{ backgroundImage: `url(${backgroundImage})` }}>
+    <div style={{ backgroundImage: `url(${backgroundImage})` }}>
       <Navbar />
       <div className={`${styles.App} h-10`}>
         <div className={`${styles.quote}`}>

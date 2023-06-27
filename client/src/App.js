@@ -10,7 +10,7 @@ import Profile from "./components/Profile";
 import Recovery from "./components/Recovery";
 import Reset from "./components/Reset";
 import Quotes from "./components/Quotes";
-import PageNotFound from "./components/PageNotFound";
+import PageNotFound from "./components/PageNotFound"; 
 
 /** auth middleware */
 import { AuthorizeUser, ProtectRoute } from "./middleware/auth";
