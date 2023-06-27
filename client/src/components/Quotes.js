@@ -10,7 +10,7 @@ function RandomQuotes() {
   const fetchQuotes = async (emotion) => {
     try {
       const response = await fetch(
-        `${process.env.REACT_APP_SERVER_DOMAIN}/api/get-quotes?emotion=${emotion}`
+        `${process.env.REACT_APP_SERVER_DOMAIN}api/get-quotes?emotion=${emotion}`
       );
       const data = await response.json();
       const randomIndex = Math.floor(Math.random() * data.length);
